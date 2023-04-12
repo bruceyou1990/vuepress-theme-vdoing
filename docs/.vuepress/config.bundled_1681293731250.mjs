@@ -50,18 +50,18 @@ var config_default = defineConfig4CustomTheme({
           {
             text: "\u5B66\u4E60\u7B14\u8BB0",
             items: [
-              { text: "\u300AJavaScript\u6559\u7A0B\u300B", link: "/coderbrucenotebook/javascript/" },
-              { text: "\u300AJavaScript\u9AD8\u7EA7\u7A0B\u5E8F\u8BBE\u8BA1\u300B", link: "/coderbrucenotebook/js/" },
-              { text: "\u300AES6 \u6559\u7A0B\u300B", link: "/coderbrucenotebook/es6/" },
-              { text: "\u300AVue\u300B", link: "/coderbrucenotebook/vue/" },
-              { text: "\u300AReact\u300B", link: "/coderbrucenotebook/react/" },
+              { text: "\u300AJavaScript\u6559\u7A0B\u300B", link: "/coderbrucenotebook/t1notebook001/" },
+              { text: "\u300AJavaScript\u9AD8\u7EA7\u7A0B\u5E8F\u8BBE\u8BA1\u300B", link: "/coderbrucenotebook/t1notebook002/" },
+              { text: "\u300AES6 \u6559\u7A0B\u300B", link: "/coderbrucenotebook/t1notebook003/" },
+              { text: "\u300AVue\u300B", link: "/coderbrucenotebook/t1notebook004/" },
+              { text: "\u300AReact\u300B", link: "/coderbrucenotebook/t1notebook005/" },
               {
                 text: "\u300ATypeScript \u4ECE\u96F6\u5B9E\u73B0 axios\u300B",
-                link: "/coderbrucenotebook/typescript-axios/"
+                link: "/coderbrucenotebook/t1notebook006/"
               },
               {
                 text: "\u300AGit\u300B",
-                link: "/coderbrucenotebook/git/"
+                link: "/coderbrucenotebook/t1notebook007/"
               },
               {
                 text: "TypeScript",
