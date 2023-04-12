@@ -43,18 +43,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '学习笔记',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
+              { text: '《JavaScript教程》', link: '/coderbrucenotebook/javascript/' },
+              { text: '《JavaScript高级程序设计》', link: '/coderbrucenotebook/js/' },
+              { text: '《ES6 教程》', link: '/coderbrucenotebook/es6/' },
+              { text: '《Vue》', link: '/coderbrucenotebook/vue/' },
+              { text: '《React》', link: '/coderbrucenotebook/react/' },
               {
                 text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
+                link: '/coderbrucenotebook/typescript-axios/',
               },
               {
                 text: '《Git》',
-                link: '/note/git/',
+                link: '/coderbrucenotebook/git/',
               },
               {
                 text: 'TypeScript',
