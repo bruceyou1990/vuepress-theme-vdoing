@@ -30,7 +30,7 @@ var config_default = defineConfig4CustomTheme({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Evan's blog",
+      title: "Coder Bruce",
       description: "web\u524D\u7AEF\u6280\u672F\u535A\u5BA2,\u4E13\u6CE8web\u524D\u7AEF\u5B66\u4E60\u4E0E\u603B\u7ED3\u3002JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github\u7B49\u6280\u672F\u6587\u7AE0\u3002"
     }
   },
@@ -44,7 +44,7 @@ var config_default = defineConfig4CustomTheme({
           {
             text: "\u524D\u7AEF\u6587\u7AE0",
             items: [
-              { text: "JavaScript", link: "/pages/8143cc480faf9a11/" }
+              { text: "JavaScript", link: "/pages/pageURLbruceyou2023/" }
             ]
           },
           {
@@ -130,7 +130,7 @@ var config_default = defineConfig4CustomTheme({
     sidebar: "structuring",
     author: {
       name: "xugaoyi",
-      link: "https://github.com/xugaoyi"
+      link: "https://bruceyou.notion.site/Coder-Bruce-5a8c1717a6d048b9bcaadf95281f1159"
     },
     blogger: {
       avatar: "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg",
@@ -147,7 +147,7 @@ var config_default = defineConfig4CustomTheme({
         {
           iconClass: "icon-github",
           title: "GitHub",
-          link: "https://github.com/xugaoyi"
+          link: "https://bruceyou.notion.site/Coder-Bruce-5a8c1717a6d048b9bcaadf95281f1159"
         },
         {
           iconClass: "icon-erji",
@@ -158,12 +158,12 @@ var config_default = defineConfig4CustomTheme({
     },
     footer: {
       createYear: 2019,
-      copyrightInfo: 'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>'
+      copyrightInfo: 'Evan Xu | <a href="https://bruceyou.notion.site/Coder-Bruce-5a8c1717a6d048b9bcaadf95281f1159/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>'
     },
     extendFrontmatter: {
       author: {
         name: "xugaoyi",
-        link: "https://github.com/xugaoyi"
+        link: "https://bruceyou.notion.site/Coder-Bruce-5a8c1717a6d048b9bcaadf95281f1159"
       }
     },
     htmlModules: htmlModules_default

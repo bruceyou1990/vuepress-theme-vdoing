@@ -2,9 +2,9 @@
 
 // 侧边栏
 module.exports = {
-  '/01.前端/': [
+  '/01.前端这是注释/': [
     {
-      title: 'JavaScript',
+      title: 'JavaScriptBruceyou',
       collapsable: false, //是否可折叠，可选的，默认true
       children: [
         ['01.JavaScript/01.JavaScript中的名词概念','JavaScript中的名词概念'],
