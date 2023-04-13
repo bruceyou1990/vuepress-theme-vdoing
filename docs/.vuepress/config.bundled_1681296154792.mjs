@@ -199,7 +199,7 @@ var config_default = defineConfig4CustomTheme({
       {
         thirdparty: [
           {
-            title: "\u5728MDN\u4E2D\u641C\u7D22",
+            title: "\u8C37\u6B4C\u641C\u7D22",
             frontUrl: "https://developer.mozilla.org/zh-CN/search?q=",
             behindUrl: ""
           },

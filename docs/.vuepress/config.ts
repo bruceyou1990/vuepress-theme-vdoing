@@ -28,7 +28,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   themeConfig: {
     // 导航配置
     nav: [
-      { text: '首页', link: '/' },
+      { text: '首页', link: '/' },//link: '/'首页
       {
         text: 'iOS专栏',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -69,7 +69,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '页面',
+        text: 'Android专栏',
         link: '/ui/',
         items: [
           { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
@@ -77,7 +77,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '技术',
+        text: '跨平台专栏',
         link: '/technology/',
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
@@ -86,20 +86,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         ],
       },
+      // {
+      //   text: '第四个菜单',
+      //   link: '/more/',
+      //   items: [
+      //     { text: '学习', link: '/pages/f2a556/' },
+      //     { text: '面试', link: '/pages/aea6571b7a8bae86/' },
+      //     { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
+      //     { text: '实用技巧', link: '/pages/baaa02/' },
+      //     { text: '友情链接', link: '/friends/' },
+      //   ],
+      // },
+      { text: '移动架构', link: '/about/' },
       {
-        text: '更多',
-        link: '/more/',
-        items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
-        ],
-      },
-      { text: '关于', link: '/about/' },
-      {
-        text: '收藏',
+        text: '网站收藏',
         link: '/pages/beb6c0bd8a66cea6/',
         // items: [
         //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
@@ -108,18 +108,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // ],
       },
       {
-        text: '索引',
+        text: '所有文章',
         link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
+        // items: [
+        //   { text: '分类', link: '/categories/' },
+        //   { text: '标签', link: '/tags/' },
+        //   { text: '归档', link: '/archives/' },
+        // ],
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    logo: '/img/logo.png', // 导航栏左边的logo
+    //repo: null , // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '最后修改时间', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -129,8 +129,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
-    // category: false, // 是否打开分类功能，默认true
-    // tag: false, // 是否打开标签功能，默认true
+    category: false, // 是否打开分类功能，默认true
+    tag: false, // 是否打开标签功能，默认true
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
@@ -172,9 +172,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      // avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: '/img/avatar.png',
+      name: 'Coder Bruce',
+      slogan: '第一代移动开发者',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -183,25 +184,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       icons: [
         {
           iconClass: 'icon-youjian',
-          title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          title: '给我留言',
+          link: 'mailto:bruceyou0618@gmail.com',
         },
         {
-          iconClass: 'icon-github',
+          iconClass: 'icon-weixin',
           title: 'GitHub',
-          link: 'https://bruceyou.notion.site/Coder-Bruce-5a8c1717a6d048b9bcaadf95281f1159',
-        },
-        {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          link: 'https://www.wjx.top/vm/ry1jJK9.aspx',
         },
       ],
     },
 
     // 页脚信息
     footer: {
-      createYear: 2019, // 博客创建年份
+      createYear: 2018, // 博客创建年份
       copyrightInfo:
         'Evan Xu | <a href="https://bruceyou.notion.site/Coder-Bruce-5a8c1717a6d048b9bcaadf95281f1159/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
@@ -263,34 +259,34 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 'fulltext-search',
 
     // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
-    [
-      'thirdparty-search',
-      {
-        thirdparty: [
-          {
-            title: '在MDN中搜索',
-            frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-            behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
-          },
-          {
-            title: '在Runoob中搜索',
-            frontUrl: 'https://www.runoob.com/?s=',
-          },
-          {
-            title: '在Vue API中搜索',
-            frontUrl: 'https://cn.vuejs.org/v2/api/#',
-          },
-          {
-            title: '在Bing中搜索',
-            frontUrl: 'https://cn.bing.com/search?q=',
-          },
-          {
-            title: '通过百度搜索本站的',
-            frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
-          },
-        ],
-      }
-    ],
+    // [
+    //   'thirdparty-search',
+    //   {
+    //     thirdparty: [
+    //       {
+    //         title: '在GitHub搜索代码库',
+    //         frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
+    //         behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
+    //       },
+    //       {
+    //         title: '在Runoob中搜索',
+    //         frontUrl: 'https://www.runoob.com/?s=',
+    //       },
+    //       {
+    //         title: '在Vue API中搜索',
+    //         frontUrl: 'https://cn.vuejs.org/v2/api/#',
+    //       },
+    //       {
+    //         title: '在Bing中搜索',
+    //         frontUrl: 'https://cn.bing.com/search?q=',
+    //       },
+    //       {
+    //         title: '通过百度搜索本站的',
+    //         frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
+    //       },
+    //     ],
+    //   }
+    // ],
 
     [
       'one-click-copy', // 代码块复制按钮
@@ -324,26 +320,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
-      'vuepress-plugin-comment', // 评论
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'Coder Bruce', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-        },
-      },
-    ],
+    // [
+    //   'vuepress-plugin-comment', // GitHub评论是怎么做的
+    //   {
+    //     choosen: 'gitalk',
+    //     options: {
+    //       clientID: 'a6e1355287947096b88b',
+    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+    //       repo: 'blog-gitalk-comment', // GitHub 仓库
+    //       owner: 'Coder Bruce', // GitHub仓库所有者
+    //       admin: ['xugaoyi'], // 对仓库有写权限的人
+    //       // distractionFreeMode: true,
+    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
+    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+    //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+    //       body:
+    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+    //     },
+    //   },
+    // ],
     [
       '@vuepress/last-updated', // "最后修改时间"时间格式
       {
